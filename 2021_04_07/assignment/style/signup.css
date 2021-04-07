@@ -1,14 +1,14 @@
-* {
+/* * {
     outline :1px solid red;
     outline-offset : -1px;
-}
+} */
 
 h1 {
     text-align: center;
 }
 
 h4 {
-    margin:5px;
+    margin:10px;
 }
 
 h5 {
@@ -17,7 +17,8 @@ h5 {
 
 table {
     width: 100%;
-    margin:0 auto;
+    margin:10px auto;
+    border-collapse: collapse;
 }
 
 th {
@@ -29,13 +30,22 @@ th {
     1px 1px 0 #000; 
     color: rgb(236, 240, 238);
     background-color: rgb(216, 246, 170);
-    
+    border: 1px solid black;
+    border-left: 0px;
 }
 
 td {
     width: 70%;
+    border: 1px solid black;
+    border-right: 0px;
 }
 
-input {
+.input {
     width: 200px;
+    border-radius: 4px;
+}
+
+.input_long {
+    width:400px;
+    border-radius: 4px;
 }
