@@ -13,7 +13,11 @@
             &lt;header&gt;
         <h1>
     </header>
-    <nav>&lt;nav&gt;</nav>
+    <nav>
+        <h2>
+            &lt;nav&gt;
+        </h2>
+    </nav>
     <main>
         <section>
             <article class="article">&lt;article&gt;</article>
