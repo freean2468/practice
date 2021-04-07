@@ -1,0 +1,41 @@
+* {
+    outline :1px solid red;
+    outline-offset : -1px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h4 {
+    margin:5px;
+}
+
+h5 {
+    margin: 5px;
+}
+
+table {
+    width: 100%;
+    margin:0 auto;
+}
+
+th {
+    width: 25%;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+    color: rgb(236, 240, 238);
+    background-color: rgb(216, 246, 170);
+    
+}
+
+td {
+    width: 70%;
+}
+
+input {
+    width: 200px;
+}
