@@ -31,6 +31,10 @@
             </div>
         </section>
     </main>
-    <footer>&lt;footer&gt;</footer>
+    <footer>
+        <h4>
+            &lt;footer&gt;
+        </h4>
+    </footer>
 </body>
 </html>

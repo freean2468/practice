@@ -3,7 +3,7 @@
     outline-offset : -1px;
 }
 
-h1, h2 {
+h1, h2, h4 {
     text-align: center;
 }
 
@@ -19,16 +19,38 @@ nav {
     background-color: rgb(104, 104, 104);
 }
 
+footer {
+    height: 50px;
+    border: 1px solid black;
+    background-color: rgb(102, 87, 87);
+}
+
 main {
     height: 300px;
 }
 
 section {
+    width : 90%;
     height : 50%;
     display: flex;
     justify-content: space-evenly;
+    background-color: rgb(236, 180, 210);
+    margin : 0 auto;
 }
 
 .article {
     width : 45%;
+    text-align: center;
+    margin: 5px 10px;
+    background-color: aquamarine;
+}
+
+#image {
+    margin: 5px 10px;
+    height: 70%;
+}
+
+#figcation {
+    margin: 5px 10px;
+    height : 20%;
 }
