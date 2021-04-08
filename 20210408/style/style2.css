@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+}
+
+div {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+  background: red;
+  border: 1px solid black;
+}
+
+.container {
+  position: relative;
+  background: yellow;
+  left: 20px;
+  top: 20px;
+}
+
+div.item {
+  position: sticky;
+  background: blue;
+  left: 20px;
+  top: 20px;
+}
