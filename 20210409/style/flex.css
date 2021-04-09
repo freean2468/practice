@@ -1,0 +1,53 @@
+* {
+  outline: 1px solid red;
+  outline-offset: -2px;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0 0;
+}
+
+div.container {
+  background: beige;
+  height: 100vh;
+  display: flex;
+  /* flex-direction: row;
+  flex-wrap: nowrap; */
+  /* flex-flow: row wrap;
+  justify-content: center; */
+  /* align-items: baseline; */
+
+  /* 보조축 간격 정렬 */
+  /* align-content: center; */
+  align-items: center;
+}
+
+div.item {
+  width: 100px;
+  height: 40px;
+  border: 2px solid black;
+  margin: 5px 5px;
+  text-align: center;
+}
+
+div.item9 {
+  width: 90px;
+  height: 20px;
+  flex-shrink: 2;
+}
+
+div.item2 {
+  width: 20px;
+  height: 70px;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+div.item10 {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  flex-shrink: 1;
+}
