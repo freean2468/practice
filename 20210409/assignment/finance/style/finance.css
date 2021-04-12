@@ -4,10 +4,6 @@
   text-align: center;
 }
 
-body {
-  margin: 0 300px;
-}
-
 table,
 tr,
 td {
@@ -104,15 +100,23 @@ main {
 
 .ml {
   width: 66%;
+  margin-right: 10px;
 }
 
 .mr {
   width: 33%;
+  margin: 0 10px;
+  display:flex;
 }
 
 #ms1 {
   width: 100%;
   border-bottom: 1px solid grey;
+  padding-bottom: 10px;
+}
+
+#ms2, #ms3 {
+  margin: 20px 0px;
 }
 
 #ms1 > div {
@@ -163,6 +167,7 @@ h5 {
 .stock-table,
 .stock-table2 {
   flex-grow: 1;
+  margin:10px 10px;
 }
 
 .stock-table div,
@@ -185,16 +190,31 @@ h5 {
 }
 
 aside {
-  height: 100%;
+  width: 100%;
   border-left: 1px solid grey;
+}
+
+aside > div {
+  margin : 20px;
+}
+
+aside > div > div:first-child {
+  margin-bottom: 10px;
+}
+
+aside > div > div:nth-child(3) {
+  padding: 100px;
+}
+
+#gd2 {
+  margin: 20px 0;
 }
 
 #gd2 > div {
   display: flex;
-  height: 150px;
 }
 
-#gd2 > h2 {
+#gd2 > h5 {
   text-align: left;
   margin: 0;
 }
@@ -202,6 +222,7 @@ aside {
 #gd2-s1,
 #gd2-s2 {
   flex-grow: 2;
+  margin: 10px;
 }
 
 .gd2-s1-d {
@@ -209,7 +230,83 @@ aside {
   flex-direction: row;
 }
 
-#gd2-s1-d span {
+.gd2-s1-d span {
   display: flex;
+  flex-direction: column;
+}
+
+.gd2-s1-d span:first {
   flex-grow: 1;
+}
+
+.gd2-s1-d>span:nth-child(2) {
+  display: flex;
+  flex-grow: 2;
+}
+
+.gd2-s1-d>span:nth-child(2) div {
+  flex-grow: 1;
+}
+
+#gd3 >div:first-child {
+  margin-left: 10px;
+  text-align: left;
+}
+
+#gd3 >div:first-child > span:first-child >h5 {
+  display:inline;
+}
+
+.tab {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  justify-content: space-evenly;
+  margin: 10px 10px;
+}
+
+#gd3 > div:nth-child(3) {
+  display: flex;
+  flex-direction: row;
+}
+
+.stock-table3 {
+  flex-grow: 1;
+  margin:10px 10px;
+}
+
+.stock-table3 div {
+  display: flex;
+}
+
+.stock-table3 span {
+  width: 100%;
+}
+
+footer > ul {
+  margin-left : 10px;
+  display:flex;
+  list-style: none;
+}
+
+footer > ul li {
+  margin-right: 20px;
+}
+
+footer > div {
+  display:flex;
+}
+
+footer > div > span:first-child{
+  text-align: left;
+  flex-grow: 2;
+}
+
+footer > div > span:nth-child(2){
+  flex-grow: 1;
+}
+
+footer > div > span:nth-child(2) > div{
+  flex-grow: 1;
+  text-align: left;
 }
