@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+.slideshow {
+  background: #000;
+  height: 465px;
+  min-width: 960px;
+  overflow: hidden;
+  position: relative;
+  /* border: 5px solid red; */
+}
+
+.slideshow_slides {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 5px solid blue;
+}
+
+.slideshow_slides .animated {
+  -webkit-transition: left 0.3s ease-in;
+  transition: left 0.3s ease-in;
+}
+
+.slideshow_slides a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+/* 이미지 스프라이트처리 */
+.slideshow_nav a {
+  width: 71px;
+  height: 71px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url(../img/sprites.png) no-repeat;
+  /* border: 1px solid red; */
+  text-indent: -9999em;
+}
+
+/* 나중에 처리할내용임
+  다음보이기, 이전보이기에서 마지막위치에 올때 해당된 이미지를 감춘다.
+*/
+.slideshow_nav a.disabled {
+  display: none;
+}
+
+.slideshow_nav a.prev {
+  background-position: 0 -20px;
+  margin-left: -480px;
+}
+
+.slideshow_nav a.next {
+  background-position: -81px -20px;
+  margin-left: 409px;
+}
